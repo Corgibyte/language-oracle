@@ -6,6 +6,10 @@
   display: none;
 }
 
+#goodbye {
+  display: none;
+}
+
 .card-deck {
   padding: 0.5em;
 }
@@ -13,3 +17,8 @@
 .row {
   padding-bottom: 0.5em;
 }
+
+.btn-block {
+  padding: 0.5em;
+}
+

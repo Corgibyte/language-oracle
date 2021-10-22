@@ -3,7 +3,11 @@ $(document).ready(function() {
     event.preventDefault();
     const name = $("input#name").val();
     $("#welcomePrompt").toggle();
-    $("#survey").toggle();
+    if ($("#accept").val() === "Yes") {
+      $("#survey").toggle();
+    } else {
+      $("#goodbye").toggle();
+    }
   });
 
   $("#surveyForm").submit(function(event) {
@@ -25,6 +29,12 @@ $(document).ready(function() {
     $("#surveyResponse").toggle();
     $("#surveyForm").trigger("reset");
   });
+
+  $("#returnToOracle").click(function() {
+    $("#welcomeForm").trigger("reset");
+    $("#goodbye").toggle();
+    $("#welcomePrompt").toggle();
+  })
 });
 
 // Business logic
