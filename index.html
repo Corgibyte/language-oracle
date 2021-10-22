@@ -24,7 +24,7 @@
           <div class="row">
           <label class="col-2 col-form-label" for="name">Who are you?</label>
           <div class="col-10">
-            <input id="name" class="form-control" type="text"  placeholder="Name">
+            <input id="name" class="form-control" type="text" required=true placeholder="Name">
           </div>
           </div>
           <div class="row">          
@@ -120,13 +120,13 @@
                   <p class="card-text">Time is measured and eternal. Until it isn't. Doomsday is not destruction wreathed in flame, but the moment when the universe's clock reaches "end."<br>In this place the ephemeral nature of time can be divined. Trust your intuition and tell the Oracle: when will time cease?
                   <div class="form-group">
                     <label for="doomsday">Doomsday will be:</label>
-                    <input id="doomsday" class="form-control" type="date">
+                    <input id="doomsday" class="form-control" type="date" required=true>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        <button class="btn btn-block bg-secondary" type="submit">Submit to oracle</button>        
+        <button class="btn btn-block bg-secondary" type="submit">Submit to Oracle</button>        
       </form>
     </div>
     <div id="surveyResponse" class="row">
@@ -135,7 +135,7 @@
           <div class="card-body">
             <h5 class="card-title">The Oracle Speaks</h5>
             <p class="card-text">
-              Hello <span id="greeting"></span>,
+              Hello <span id="greeting"></span>,<br>
               The Oracle has considered all possibilities and has divined answers as true as they are real. The Oracle has divined that the best language for you to use is <span id="chosenLanguage"></span>.<br>
               The Oracle has also divined that <span id="chosenOS"></span> is the best OS for you to use.<br>
               <span id="timeToDoomsday"></span>
