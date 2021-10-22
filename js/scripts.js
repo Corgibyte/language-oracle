@@ -19,6 +19,12 @@ $(document).ready(function() {
     $("#survey").toggle();
     $("#surveyResponse").toggle();
   });
+
+  $("#returnButton").click(function() {
+    $("#survey").toggle();
+    $("#surveyResponse").toggle();
+    $("#surveyForm").trigger("reset");
+  });
 });
 
 // Business logic

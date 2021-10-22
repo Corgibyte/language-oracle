@@ -33,6 +33,7 @@
             </label>
             <div class="col-2">
               <select id="accept" class="form-control">
+                <option value="">--Please choose an option--</option>
                 <option>No</option>
                 <option>Yes</option>
               </select>
@@ -52,7 +53,8 @@
                 <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
                 </p>
-                <select id="ideology" class="form-control">
+                <select id="ideology" required=true class="form-control">
+                  <option value="">--Please choose an option--</option>
                   <option>Order</option>
                   <option>Chaos</option>
                 </select>
@@ -66,7 +68,8 @@
                 <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
                 </p>
-                <select id="strategy" class="form-control">
+                <select id="strategy" required=true class="form-control">
+                  <option value="">--Please choose an option--</option>
                   <option>Beauty</option>
                   <option>Power</option>
                 </select>
@@ -82,7 +85,8 @@
                 <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
                 </p>
-                <select id="element" class="form-control">
+                <select id="element" required=true class="form-control">
+                  <option value="">--Please choose an option--</option>
                   <option value="1">Earth</option>
                   <option value="2">Air</option>
                   <option value="1">Fire</option>
@@ -98,7 +102,8 @@
                 <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
                 </p>
-                <select id="home" class="form-control">
+                <select id="home" required=true class="form-control">
+                  <option value="">--Please choose an option--</option>
                   <option>Nature</option>
                   <option>Civilization</option>
                   <option>Edges</option>
@@ -129,6 +134,7 @@
           <div class="card-body">
             <h5 class="card-title">The Oracle Speaks</h5>
             <p class="card-text">The Oracle says: <span id="chosenLanguage"></span>.</p>
+            <button class="btn btn-block bg-secondary" type="button" id="returnButton">Return to the Oracle</button>
           </div>
         </div>
       </div>
