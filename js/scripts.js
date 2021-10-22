@@ -17,6 +17,7 @@ $(document).ready(function() {
     const home = $("#home").val();
     const timeToDoomsday = getDaysUntil($("#doomsday").val());
 
+    //Update response card with answers
     $("#greeting").text($("input#name").val());
     $("#chosenLanguage").text(chooseLanguage(ideology, strategy, element));
     $("#chosenOS").text(chooseOS(home));
