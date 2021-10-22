@@ -8,21 +8,24 @@ $(document).ready(function() {
 
   $("#surveyForm").submit(function(event) {
     event.preventDefault();
-    const ideology = $("input#ideology").val();
-    const strategy = $("input#strategy").val();
-    const element = $("input#element").val();
-    const home = $("input#home").val();
-    const doomsday = $("input#doomsday").val();
+    const ideology = $("#ideology").val();
+    const strategy = $("#strategy").val();
+    const element = $("#element").val();
+    const home = $("#home").val();
+    const doomsday = $("#doomsday").val();
 
-    //processSurvey(ideology, strategy, element, home, doomsday);
+    processSurvey(ideology, strategy, element, home, doomsday);
 
-    //$("#survey").toggle();
-    //$("#surveyResponse").toggle();
+    $("#survey").toggle();
+    $("#surveyResponse").toggle();
   });
 });
 
 // Business logic
 
-/* function processSurvey(ideology, strategy, element, home, doomsday) {
-  $("#response-card").text(ideology + strategy + element + home + doomsday);
-} */
+function processSurvey(ideology, strategy, element, home, doomsday) {
+  console.log(ideology);
+  console.log(strategy);
+  console.log(element);
+  console.log(home);
+}
