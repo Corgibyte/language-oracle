@@ -26,7 +26,7 @@ $(document).ready(function() {
 function chooseLanguage(ideology, strategy, element) {
   let lang = "";  
   if (ideology === "Order") {
-    if (strategy === "Form") {
+    if (strategy === "Beauty") {
       if (element === "1") {
         lang = "Lisp";
       } else {
@@ -40,7 +40,7 @@ function chooseLanguage(ideology, strategy, element) {
       }
     }
   } else {
-    if (strategy === "Form") {
+    if (strategy === "Beauty") {
       if (element === "1") {
         lang = "Ruby";
       } else {

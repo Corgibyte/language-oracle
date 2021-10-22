@@ -5,3 +5,7 @@
 #surveyResponse {
   display: none;
 }
+
+.card-deck {
+  padding: 0.5em;
+}
