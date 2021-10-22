@@ -15,17 +15,31 @@
     <div class="jumbotron">
       <h1>Language Oracle</h1>
     </div>
-    <div id="welcomePrompt">
+    <div id="welcomePrompt" class="card">
       <form id="welcomeForm">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dolores mollitia placeat non quos totam iusto nihil, repellat delectus quasi?
-        <label for="name">Name:</label>
-        <input id="name" class="form-control" type="text">
-        <label for="accept">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores magnam maxime laudantium illum, iusto tempore.</label>
-        <select id="accept" "class="form-control">
-          <option>Yes</option>
-          <option>No</option>
-        </select>
-        <button class="btn" type="submit">Take me to the Oracle</button>
+        <div class="card-body">
+          <p class="card-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dolores mollitia placeat non quos totam iusto nihil, repellat delectus quasi?
+          </p>
+          <div class="row">
+          <label class="col-2 col-form-label" for="name">Name:</label>
+          <div class="col-10">
+            <input id="name" class="form-control" type="text">
+          </div>
+          </div>
+          <div class="row">          
+            <label class="col-10 col-form-label" for="accept">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores magnam maxime laudantium illum, iusto tempore.
+            </label>
+            <div class="col-2">
+              <select id="accept" class="form-control">
+                <option>No</option>
+                <option>Yes</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-block btn-lg bg-secondary" type="submit">Take me to the Oracle</button>
       </form>
     </div>
     <div id="survey">
