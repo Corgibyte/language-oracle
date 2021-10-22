@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $("#welcomeForm").submit(function(event) {
     event.preventDefault();
-    const name = $("input#name").val();
     $("#welcomePrompt").toggle();
     if ($("#accept").val() === "Yes") {
       $("#survey").toggle();
@@ -16,9 +15,17 @@ $(document).ready(function() {
     const strategy = $("#strategy").val();
     const element = $("#element").val();
     const home = $("#home").val();
-    const doomsday = $("#doomsday").val();
+    const timeToDoomsday = getDaysUntil($("#doomsday").val());
 
-    $("#chosenLanguage").append(chooseLanguage(ideology, strategy, element));
+    $("#greeting").text($("input#name").val());
+    $("#chosenLanguage").text(chooseLanguage(ideology, strategy, element));
+    $("#chosenOS").text(chooseOS(home));
+    if (timeToDoomsday > 0) {
+      const doomsdayText = "According to your prediction, time will end in " + timeToDoomsday + " days. Prepare yourself.";
+      $("#timeToDoomsday").text(doomsdayText);
+    } else {
+      $("#timeToDoomsday").text("Your intuition says time has already stopped. This is unlikely.");
+    }    
 
     $("#survey").toggle();
     $("#surveyResponse").toggle();
@@ -71,4 +78,24 @@ function chooseLanguage(ideology, strategy, element) {
     }
   }
   return lang;
+}
+
+function chooseOS(home) {
+  let os = "";
+  if (home === "Civilization") {
+    os = "Mac OS X";
+  } else if (home === "Nature") {
+    os = "Microsoft Windows";
+  } else {
+    os = "Linux";
+  }
+  return os;  
+}
+
+function getDaysUntil(endDateStr) {
+  const startDate = new Date();
+  const endDate = new Date(endDateStr);
+
+  const timeDiffInMS = endDate.getTime() - startDate.getTime();
+  return (parseInt(timeDiffInMS / (1000 * 60 * 60 *24))).toString();
 }
