@@ -30,73 +30,85 @@
     </div>
     <div id="survey">
       <form id="surveyForm">
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Order vs chaos.</h5>
-              <div class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Order vs chaos.</h5>
+                <div class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+                </div>
+                <select id="ideology" class="form-control">
+                  <option>Order</option>
+                  <option>Chaos</option>
+                </select>
               </div>
-              <select id="ideology" class="form-control">
-                <option>Order</option>
-                <option>Chaos</option>
-              </select>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Beauty vs power.</h5>
-              <div class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Beauty vs power.</h5>
+                <div class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+                </div>
+                <select id="strategy" class="form-control">
+                  <option>Beauty</option>
+                  <option>Power</option>
+                </select>
               </div>
-              <select id="strategy" class="form-control">
-                <option>Beauty</option>
-                <option>Power</option>
-              </select>
             </div>
           </div>
         </div>
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Element</h5>
-              <div class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Element</h5>
+                <div class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+                </div>
+                <select id="element" class="form-control">
+                  <option value="1">Earth</option>
+                  <option value="2">Air</option>
+                  <option value="1">Fire</option>
+                  <option value="2">Water</option>
+                </select>
               </div>
-              <select id="element" class="form-control">
-                <option value="1">Earth</option>
-                <option value="2">Air</option>
-                <option value="1">Fire</option>
-                <option value="2">Water</option>
-              </select>
             </div>
           </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Home</h5>
-              <div class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Home</h5>
+                <div class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
+                </div>
+                <select id="home" class="form-control">
+                  <option>Nature</option>
+                  <option>Civilization</option>
+                  <option>Edges</option>
+                </select>
               </div>
-              <select id="home" class="form-control">
-                <option>Nature</option>
-                <option>Civilization</option>
-                <option>Edges</option>
-              </select>
             </div>
           </div>
         </div>
-          <div class="card">
-            <div class="card-body">
-              Doomsday.
-              <div class="form-group">
-                <label for="doomsday">Doomsday:</label>
-                <input id="doomsday" class="form-control" type="date">
+          <div class="row justify-content-center">
+            <div class="col-6">
+              <div class="card text-center" id="doomsdayCard">
+                <div class="card-body">
+                  Doomsday.
+                  <div class="form-group">
+                    <label for="doomsday">Doomsday:</label>
+                    <input id="doomsday" class="form-control" type="date">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        <button class="btn" type="submit">Submit to oracle</button>        
+        <button class="btn btn-block btn-lg bg-secondary" type="submit">Submit to oracle</button>        
       </form>
-    </div>    
+    </div>
     <div id="surveyResponse">
       <div class="card">
         <div class="card-body">
