@@ -14,7 +14,7 @@ $(document).ready(function() {
     const home = $("#home").val();
     const doomsday = $("#doomsday").val();
 
-    $("#responseText").append(chooseLanguage(ideology, strategy, element));
+    $("#chosenLanguage").append(chooseLanguage(ideology, strategy, element));
 
     $("#survey").toggle();
     $("#surveyResponse").toggle();

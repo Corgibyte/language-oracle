@@ -49,9 +49,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Order vs chaos.</h5>
-                <div class="card-text">
+                <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
-                </div>
+                </p>
                 <select id="ideology" class="form-control">
                   <option>Order</option>
                   <option>Chaos</option>
@@ -63,9 +63,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Beauty vs power.</h5>
-                <div class="card-text">
+                <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
-                </div>
+                </p>
                 <select id="strategy" class="form-control">
                   <option>Beauty</option>
                   <option>Power</option>
@@ -79,9 +79,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Element</h5>
-                <div class="card-text">
+                <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
-                </div>
+                </p>
                 <select id="element" class="form-control">
                   <option value="1">Earth</option>
                   <option value="2">Air</option>
@@ -95,9 +95,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Home</h5>
-                <div class="card-text">
+                <p class="card-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit mollitia doloremque, quas animi maiores placeat totam aperiam voluptatum officiis enim.
-                </div>
+                </p>
                 <select id="home" class="form-control">
                   <option>Nature</option>
                   <option>Civilization</option>
@@ -123,10 +123,13 @@
         <button class="btn btn-block btn-lg bg-secondary" type="submit">Submit to oracle</button>        
       </form>
     </div>
-    <div id="surveyResponse">
-      <div class="card">
-        <div class="card-body">
-          <p id="responseText"></p>
+    <div id="surveyResponse" class="row">
+      <div class="col-6 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">The Oracle Speaks</h5>
+            <p class="card-text">The Oracle says: <span id="chosenLanguage"></span>.</p>
+          </div>
         </div>
       </div>
     </div>
