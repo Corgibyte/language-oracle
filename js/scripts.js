@@ -14,7 +14,7 @@ $(document).ready(function() {
     const home = $("#home").val();
     const doomsday = $("#doomsday").val();
 
-    processSurvey(ideology, strategy, element, home, doomsday);
+    $("#responseText").append(chooseLanguage(ideology, strategy, element));
 
     $("#survey").toggle();
     $("#surveyResponse").toggle();
@@ -23,9 +23,36 @@ $(document).ready(function() {
 
 // Business logic
 
-function processSurvey(ideology, strategy, element, home, doomsday) {
-  console.log(ideology);
-  console.log(strategy);
-  console.log(element);
-  console.log(home);
+function chooseLanguage(ideology, strategy, element) {
+  let lang = "";  
+  if (ideology === "Order") {
+    if (strategy === "Form") {
+      if (element === "1") {
+        lang = "Lisp";
+      } else {
+        lang = "Haskell";
+      }
+    } else {
+      if (element === "1") {
+        lang = "Swift";
+      } else {
+        lang = "Scala";
+      }
+    }
+  } else {
+    if (strategy === "Form") {
+      if (element === "1") {
+        lang = "Ruby";
+      } else {
+        lang = "C#";
+      }
+    } else {
+      if (element === "1") {
+        lang = "C++";
+      } else {
+        lang = "Python";
+      }
+    }
+  }
+  return lang;
 }
