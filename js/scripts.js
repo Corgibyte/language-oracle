@@ -3,9 +3,9 @@ $(document).ready(function() {
     event.preventDefault();
     $("#welcomePrompt").fadeOut();
     if ($("#accept").val() === "Yes") {
-      $("#survey").fadeIn();
+      $("#survey").fadeOut();
     } else {
-      $("#goodbye").fadeIn();
+      $("#goodbye").fadeOut();
     }
   });
 
@@ -29,11 +29,11 @@ $(document).ready(function() {
     }    
 
     $("#survey").fadeOut();
-    $("#surveyResponse").fadeIn();
+    $("#surveyResponse").fadeOut();
   });
 
   $("#returnButton").click(function() {
-    $("#survey").fadeIn();
+    $("#survey").fadeOut();
     $("#surveyResponse").fadeOut();
     $("#surveyForm").trigger("reset");
   });
@@ -41,7 +41,7 @@ $(document).ready(function() {
   $("#returnToOracle").click(function() {
     $("#welcomeForm").trigger("reset");
     $("#goodbye").fadeOut();
-    $("#welcomePrompt").fadeIn();
+    $("#welcomePrompt").fadeOut();
   })
 });
 
