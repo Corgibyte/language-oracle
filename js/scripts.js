@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $("#welcomeForm").submit(function(event) {
     event.preventDefault();
-    $("#welcomePrompt").toggle();
+    $("#welcomePrompt").fadeOut();
     if ($("#accept").val() === "Yes") {
-      $("#survey").toggle();
+      $("#survey").fadeIn();
     } else {
-      $("#goodbye").toggle();
+      $("#goodbye").fadeIn();
     }
   });
 
@@ -28,20 +28,20 @@ $(document).ready(function() {
       $("#timeToDoomsday").text("Your intuition says time has already stopped. This is unlikely.");
     }    
 
-    $("#survey").toggle();
-    $("#surveyResponse").toggle();
+    $("#survey").fadeOut();
+    $("#surveyResponse").fadeIn();
   });
 
   $("#returnButton").click(function() {
-    $("#survey").toggle();
-    $("#surveyResponse").toggle();
+    $("#survey").fadeIn();
+    $("#surveyResponse").fadeOut();
     $("#surveyForm").trigger("reset");
   });
 
   $("#returnToOracle").click(function() {
     $("#welcomeForm").trigger("reset");
-    $("#goodbye").toggle();
-    $("#welcomePrompt").toggle();
+    $("#goodbye").fadeOut();
+    $("#welcomePrompt").fadeIn();
   })
 });
 
